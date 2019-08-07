@@ -3,36 +3,35 @@ const ctx = canvas.getContext('2d');
 
 class Comet {
 
-	constructor(){	
+	constructor(angle){	
 		this.x = canvas.width;
 		this.y = 0;
-		this.angle = Math.floor((Math.random() * (180 - 90)) + 90);
+		this.angle = angle
 		this.angleRads = this.angle * (Math.PI/180);
 	}
 	draw(){
+		ctx.clearRect(this.x-5, this.y-5, 10, 10)
 		ctx.beginPath()
 		ctx.arc(this.x, this.y, 2, 0, Math.PI * 2, true)
-		ctx.fillStyle = 'black';
+		ctx.fillStyle = 'white';
 		ctx.fill()
-		// console.log(this.angle);
-
-		const time = setInterval(()=>{
-			this.animate()
-		},100)
+		this.x = this.x + 0.75 * Math.cos(this.angleRads)
+		this.y = this.y + 0.75 * Math.sin(this.angleRads)
 
 	}
 	animate(){
-		ctx.clearRect(0, 0, canvas.width, canvas.height)
-		this.x = this.x + 0.1 * Math.cos(this.angleRads)
-		this.y = this.y + 0.1 * Math.sin(this.angleRads)
-		// console.log(this.x,this.y);
-		this.draw()
-		// console.log('move');
+		const time = setInterval(()=>{
+			if (this.x >= 0 || this.y <= canvas.height) {
+				this.draw()
+			}
+		},10)
+		
 	}
 }
 
 const cometTimer = setInterval(() => {
 	console.log('newComet');
-	const newComet = new Comet
+	const newComet = new Comet(Math.floor((Math.random() * (180 - 90)) + 90))
 	newComet.draw()
+	newComet.animate()
 }, 500)
