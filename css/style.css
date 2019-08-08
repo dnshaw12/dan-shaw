@@ -1,5 +1,6 @@
 body {
 	margin: 0px;
+	background-color: black;
 }
 
 header {
@@ -27,7 +28,7 @@ h1 {
 	min-width: 500px;
 	top: 50px;
 	left: 0px;
-	margin-left: 15px;
+	margin-left: 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

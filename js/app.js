@@ -38,7 +38,7 @@ class Comet {
 	}
 	animate(){
 		const time = setInterval(()=>{
-			if (this.x >= -5 || this.y <= canvas.height + 5) {
+			if (this.x < canvas.width + 10) {
 				this.draw()
 			}
 		},10)
