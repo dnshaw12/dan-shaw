@@ -2,11 +2,23 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div id="nav-wrap">
+		<nav class="navbar sticky-top navbar-collapse navbar-brand">
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#experience">Experience</a>
+			<!-- <a href="#testimonials">Testimonials</a> -->
+			<a href="#sample">Sample Work</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</div>
 	<header>
 		<canvas id="my-canvas">
 		</canvas>
@@ -15,7 +27,144 @@
 			<h3>Software Engineer</h3>
 		</div>
 	</header>
+	<main>
+		<a name="about" class="tag"></a>
+		<div id='about'>
+			<div class="spacer"></div>
+			<h2>About Me</h2><br>
+			<p>I am graduate from General Assembly’s Software Engineering Immersion and I'm pursuing a career that will keep me engaged and challenged. By combining my education, creative nature, and past experience in internal operations application construction, I am equipped to develop and design user-minded applications.</p>
+		</div>
+		<a name="skills" class="tag"></a>
+		
+		<div id="skills">
+			<div class="spacer"></div>
+			<h2>Skills</h2>
+			<div id='skills-div' class='p'>
+				<div class="row">
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<span>HTML</span>
+						<img src="./images/html.png">
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<span>CSS</span>
+						<img src="./images/css.png">
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<span>JavaScript</span>
+						<img src="./images/js.png">
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<span>JQuery</span>
+						<img src="./images/jquery.png">
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<span>NodeJS</span>
+						<img src="./images/nodejs.png">
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<span>Express</span>
+						<img src="./images/express.png">
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<span>MongoDB</span>
+						<img src="./images/mongodb.png">
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<span>React</span>
+						<img src="./images/react.png">
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<span>Python</span>
+						<img src="./images/python.png">
+					</div>
+				</div>
 
+			</div>
+		</div>
+		<a name="experience" class="tag"></a>
+		
+		<div>
+			<div class="spacer"></div>
+			<h2>Experience</h2><br/><!-- <img class='dropdown' src="./images/dropdown.png"> -->
+			<div id="exp-content">
+				<div class="exp-col">
+					<h3>Healthcare Program Specialist</h3>
+					<div class="exp-header">
+						<img src="https://static-assets.ny.gov/sites/all/themes/ny_gov/images/nygov-logo.png" class="exp-logo">
+						<h5>NYS Department of Health</h5>
+					</div>
+					<div href="#" id="exp-show-details-nys">See Details</div>
+					<ul id="exp-ul-nys">
+						<li>Processed applications for Medicaid Providers</li>
+						<li>Mentored supervisees to achieve and exceed bureau quality and production standards</li>
+						<li>Evaluated internal production and quality standards for 50+ staff</li>
+						<li>Designed and developed quality assurance reporting tools</li>
+						<li>Managed data validation operations </li>
+					</ul>
+				</div><br/>
+				<div class="exp-col">
+					<h3>Funding Support Specialist</h3>
+					<div class="exp-header">
+						<img src="https://www.topsteptrader.com/images/TopstepTraderLogoWebsite%28no%20tagline%29.png" id="tst-logo">
+					</div>
+					<div  id="exp-show-details-tst">See Details</div>
+					<ul id="exp-ul-tst">
+						<li>Constructed financial tracking and account management tools to mitigate $500K of potential risk</li>
+						<li>Analyzed operational system efficiencies and implemented changes to reduce brokerage account creation time from 7-10 business days to 3-4 business days</li>
+						<li>Established policy and procedure for new and existing products</li>
+						<li>Guided core product development by providing insight into user mindset and behavior</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<a name="sample" class="tag"></a>
+		
+		<div>
+			<div class="spacer"></div>
+			<h2>Sample Work</h2>
+			<div id="sample-content">
+				<a href="https://github.com/dnshaw12/ye-feudal-cage-match" class="project-icon" id="ye-feudal">
+					<img src="./images/wiz-icon.png" id="ye-img">
+					<div class="project-content">
+						<h2>Ye Feudal Cage Match</h2>
+						<p>Combined HTML/CSS/JS create engaging multi-player board game. Utilized dynamic JS/CSS animation.</p>
+					</div>
+				</a>
+				<a href="https://github.com/dnshaw12/BulletinBoard" class="project-icon" id="bulletin-board">
+					<img src="./images/pin.png" id="bulletin-img">
+					<div class="project-content">
+						<h2>BulletinBoard</h2>
+						<p>Fullstack app which allows users to create and host events as an individual or a group. Combines Express, NodeJS, and MongoDB.</p>
+					</div>
+				</a>
+			</div>
+
+
+		</div>
+		<a name="contact" class="tag"></a>
+		
+		<div id="contact-area">
+			<div class="spacer"></div>
+			<form id="contact-form">
+				<h2>Contact</h2>
+				<label>Name:
+					<input type="text" name="name" placeholder="Name"></input>
+				</label><br/>
+				<label>Email:
+					<input type="email" name="email" placeholder="Email"></input>
+				</label><br/>
+				<label>Message:<br/>
+					<textarea name="message" placeholder="What's on your mind?"></textarea>
+				</label><br/>
+				<button>Submit</button>
+			</form>
+		</div>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
