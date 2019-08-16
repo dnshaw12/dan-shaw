@@ -42,40 +42,52 @@
 			<div id='skills-div' class='p'>
 				<div class="row">
 					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
-						<span>HTML</span>
 						<img src="./images/html.png">
+						<span>HTML</span>
 					</div>
 					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
-						<span>CSS</span>
 						<img src="./images/css.png">
+						<span>CSS</span>
 					</div>
 					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
-						<span>JavaScript</span>
 						<img src="./images/js.png">
+						<span>JavaScript</span>
 					</div>
 					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
-						<span>JQuery</span>
 						<img src="./images/jquery.png">
+						<span>jQuery</span>
 					</div>
 					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
-						<span>NodeJS</span>
 						<img src="./images/nodejs.png">
+						<span>NodeJS</span>
 					</div>
 					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
-						<span>Express</span>
 						<img src="./images/express.png">
+						<span>Express</span>
 					</div>
 					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
-						<span>MongoDB</span>
 						<img src="./images/mongodb.png">
+						<span>MongoDB</span>
 					</div>
 					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
-						<span>React</span>
 						<img src="./images/react.png">
+						<span>React</span>
 					</div>
 					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
-						<span>Python</span>
 						<img src="./images/python.png">
+						<span>Python</span>
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<img src="./images/flask.png">
+						<span>Flask</span>
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<img src="./images/sql.png">
+						<span>SQL</span>
+					</div>
+					<div class='col-lg-3 col-md-4 col-sm-6 col-12'>
+						<img src="./images/postgres.png">
+						<span>PostgreSQL</span>
 					</div>
 				</div>
 
@@ -124,19 +136,19 @@
 			<div class="spacer"></div>
 			<h2>Sample Work</h2>
 			<div id="sample-content">
-				<a href="https://github.com/dnshaw12/ye-feudal-cage-match" class="project-icon" id="ye-feudal">
+				<a href="https://github.com/dnshaw12/ye-feudal-cage-match" class="project-icon" id="ye-feudal" target="_blank">
 					<img src="./images/wiz-icon.png" id="ye-img">
 					<div class="project-content">
-						<h2>Ye Feudal Cage Match</h2>
 						<p>Combined HTML/CSS/JS create engaging multi-player board game. Utilized dynamic JS/CSS animation.</p>
 					</div>
+					<h2>Ye Feudal Cage Match</h2>
 				</a>
-				<a href="https://github.com/dnshaw12/BulletinBoard" class="project-icon" id="bulletin-board">
+				<a href="https://github.com/dnshaw12/BulletinBoard" class="project-icon" id="bulletin-board" target="_blank">
 					<img src="./images/pin.png" id="bulletin-img">
 					<div class="project-content">
-						<h2>BulletinBoard</h2>
 						<p>Fullstack app which allows users to create and host events as an individual or a group. Combines Express, NodeJS, and MongoDB.</p>
 					</div>
+					<h2>BulletinBoard</h2>
 				</a>
 			</div>
 
@@ -146,13 +158,13 @@
 		
 		<div id="contact-area">
 			<div class="spacer"></div>
-			<form id="contact-form">
+			<form id="contact-form" action="mailto:dnshaw12@gmail.com" method="post" enctype="text/plain">
 				<h2>Contact</h2>
 				<label>Name:
-					<input type="text" name="name" placeholder="Name"></input>
+					<input type="text" name="name" placeholder="Name" required></input>
 				</label><br/>
 				<label>Email:
-					<input type="email" name="email" placeholder="Email"></input>
+					<input type="email" name="email" placeholder="Email" required></input>
 				</label><br/>
 				<label>Message:<br/>
 					<textarea name="message" placeholder="What's on your mind?"></textarea>
@@ -161,6 +173,14 @@
 			</form>
 		</div>
 	</main>
+
+	<footer>
+		<div>
+			<a href="https://github.com/dnshaw12" target="_blank"><img src="./images/github.png"></a>
+			<a href="https://www.linkedin.com/in/daniel-shaw-90889a108/" target="_blank"><img src="./images/linkedin.png"></a>
+			<div>Resume [<a href="./images/resume.pdf" target="_blank">PDF</a>]</div>
+		</div>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

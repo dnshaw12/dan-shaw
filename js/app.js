@@ -19,7 +19,7 @@ class Comet {
 
 	constructor(angle, colorIndex){	
 		this.x = -60;
-		this.y = canvas.height/3-5;
+		this.y = canvas.height/3;
 		this.angle = angle
 		this.colorIndex = colorIndex
 		this.angleRads = this.angle * (Math.PI/180);
@@ -44,6 +44,9 @@ class Comet {
 		const time = setInterval(()=>{
 			if (this.x < canvas.width + 10) {
 				this.draw()
+			} else {
+				clearInterval(time)
+				$(this).remove()
 			}
 		},10)
 		
@@ -51,11 +54,11 @@ class Comet {
 }
 
 const cometTimer = setInterval(() => {
-	console.log('newComet');
+	// console.log('newComet');
 	const newComet = new Comet(Math.random() * (15 - -15) + -15, Math.floor((Math.random() * 8)))
 	newComet.draw()
 	newComet.animate()
-}, 75)
+}, 100)
 
 // const time = setInterval(()=>{
 // 	ctx.clearRect(0, 0, canvas.width, canvas.height)

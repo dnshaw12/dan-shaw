@@ -125,6 +125,10 @@ main > div > h2 {
 	align-content: center
 }
 
+.row {
+	margin-top: 15px;
+}
+
 .row > div > img {
 	max-height: 50%;
 	max-width: 50%;
@@ -199,6 +203,7 @@ li {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .exp-col {
@@ -255,6 +260,18 @@ li {
 	margin-top: 20px
 }
 
+#sample-content > a > h2 {
+	margin-top: 20px;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+
+#sample-content > a > h2:hover {
+	color: white;
+	text-decoration: none;
+}
+
 .project-icon {
 	border: 8px solid white;
 	border-radius: 100%;
@@ -264,6 +281,12 @@ li {
 	min-width: 250px;
 	min-height: 250px;
 	margin: 15px;
+	transition: .2s;
+}
+
+.project-icon:hover {
+	transform: scale(1.1);
+	text-decoration: none;
 }
 
 .project-icon > img {
@@ -300,6 +323,7 @@ li {
 
 .project-content:hover {
 	opacity: 1;
+	transform: scale(1.1);
 }
 
 .project-content > h2 {
@@ -315,5 +339,49 @@ li {
 	color: white;
 }
 
+footer {
+	padding-top: 3px;
+	bottom: 0px;
+	height: 73px;
+	background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+	width: 100%;
+	position: relative;
+	clear: both;
+}
 
+footer > div {
+	bottom: 0px;
+	height: 70px;
+	width: 100%;
+	margin-top: 20px;
+	background-color: black;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 
+}
+
+footer > div > a {
+	text-align: center;
+}
+
+footer > div > a, footer > div > div {
+	margin: 15px 35px;
+	color: white;
+	max-height: 100%;
+	text-align: center;
+}
+
+footer > div > a > img {
+	max-height: 100%;
+}
+
+footer > div > div > a {
+	color: white;
+}
+
+footer > div > div > a:hover {
+	color: white;
+
+}
