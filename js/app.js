@@ -60,6 +60,50 @@ const cometTimer = setInterval(() => {
 	newComet.animate()
 }, 100)
 
+
+// const canvasSpacer = document.getElementsByClassName('spacer');
+
+// class Ghost {
+
+// 	constructor(){	
+// 		this.x = -30;
+// 		this.y = canvasSpacer.height/2;
+
+// 	}
+// 	draw(){
+// 		const background = new Image;
+// 		background.src = `./images/pacman-ghost-${Math.floor(Math.random() * (3 - 1) + 1)}.gif`;
+// 		ctx.clearRect(0,0,canvasSpacer.width,canvasSpacer.height)
+
+// 		ctx.beginPath()
+
+// 		ctx.drawImage(background,this.x,this.y)
+
+// 		this.x = this.x + 1
+// 	}
+
+// 	animate(){
+// 		const time = setInterval(()=>{
+// 			if (this.x < canvas.width + 10) {
+// 				this.draw()
+// 			} else {
+// 				clearInterval(time)
+// 				$(this).remove()
+// 			}
+// 		},10)
+		
+// 	}
+
+// }
+
+// const ghostTimer = setInterval(() => {
+// 	console.log('new ghost');
+// 	const newGhost = new Ghost()
+// 	newGhost.draw()
+// 	newGhost.animate()
+// }, 2500)
+
+
 // const time = setInterval(()=>{
 // 	ctx.clearRect(0, 0, canvas.width, canvas.height)
 // },10)

@@ -11,7 +11,7 @@ header {
 	margin: 0px;
 }
 
-canvas {
+#my-canvas {
 	width: 100%;
 	height: 150%;
 	z-index: 5;
@@ -54,12 +54,13 @@ h1 {
 
 main {
 	width: 100vw;
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 main > div {
 	width: 90%;
-	/*height: 300px;*/
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -136,6 +137,7 @@ main > div > h2 {
 
 .row > div {
 	max-height: 200px;
+	min-width: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -158,10 +160,55 @@ main > div > h2 {
 }
 
 .spacer {
-	width: 100%;
-	height: 60px;
-	background-color: black;
+	left: 0px;
+	width: 100vw;
+	height: 65px;
+	padding: 0px;
+	background-color: transparent;
+	z-index: 0;
+	overflow: hidden;
+	margin: 5px 0px;
+}
 
+.ghost {
+	height: 65px;
+	width: 65px;
+	position: relative;
+	left: -65px;
+}
+
+#ghost-1 {
+	animation: 14s moveGhost infinite linear;
+}
+
+
+#ghost-2 {
+	animation: turn 10s infinite step-end, moveGhost 10s infinite linear;
+}
+
+#ghost-3 {
+	animation: turnFlipped 12s infinite step-end, moveGhost 12s infinite linear;
+}
+
+#pacman {
+	animation: turn 8s infinite step-end, moveGhost 8s infinite linear;
+}
+
+@keyframes moveGhost {
+	5%   {left:-65px;}
+  	45%  {left:100%;}
+  	55%  {left:100%;}
+  	95% {left:-65px;}
+}
+
+@keyframes turn {
+	0%	{-webkit-transform: scaleX(1);transform: scaleX(1);}
+	50% {-webkit-transform: scaleX(-1);transform: scaleX(-1);}
+}
+
+@keyframes turnFlipped {
+	0%	{-webkit-transform: scaleX(-1);transform: scaleX(-1);}
+	50% {-webkit-transform: scaleX(1);transform: scaleX(1);}
 }
 
 h3 > img {
@@ -364,6 +411,7 @@ footer > div {
 
 footer > div > a {
 	text-align: center;
+	max-width: 60px;
 }
 
 footer > div > a, footer > div > div {
@@ -385,3 +433,36 @@ footer > div > div > a:hover {
 	color: white;
 
 }
+
+.project-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-height: 150px;
+	margin: 20px 0px;
+}
+
+.project-header > div > a, .project-header > div {
+	color: white;
+	font-size: 30px;
+}
+
+.project-header > div > a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.project-img {
+	max-width: 50%;
+	border: 8px outset white;
+}
+
+./*project-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}*/
+
+
+
+
