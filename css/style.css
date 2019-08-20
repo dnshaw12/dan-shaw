@@ -59,6 +59,22 @@ main {
 	align-items: center;
 }
 
+#about-div {
+	display: flex;
+	flex-direction: row;
+}
+
+#about-div > p {
+	width: 70%;
+	margin: 0px 2.5%;
+}
+
+#about-div > img {
+	width: 25%;
+	border: 5px outset darkgrey;
+	border-radius: 100%;
+}
+
 main > div {
 	width: 90%;
 	color: white;
