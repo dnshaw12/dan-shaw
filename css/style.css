@@ -253,10 +253,6 @@ li {
 	transition: .5s;
 }
 
-#exp-ul-nys, #exp-ul-tst {
-	/*height: 0px;*/
-}
-
 #exp-show-details-tst:hover, #exp-show-details-nys:hover {
 	text-decoration: underline;
 	cursor: pointer;
@@ -276,8 +272,15 @@ li {
 }
 
 .open {
-	height: 10%;
+	height: 100%;
 	opacity: 1;
+}
+
+.openList {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 #contact-area {
